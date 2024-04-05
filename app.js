@@ -8,6 +8,12 @@ app.get("/login",(req, res, next)=>{
     return res.status(200).json({
         message:'you are login a page!2'
     })
+});
+
+app.get("/signout",(req, res, next)=>{
+    return res.status(200).json({
+        message:"you are logout from page!"
+    })
 })
 
 app.use((req, res, next)=>{
